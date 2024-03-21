@@ -1,0 +1,113 @@
+:root {
+  --Color1: #35383f;
+  --btnColor: #5b606b;
+  --hoverColor: #8f9299;
+  --boardcolor: #222427;
+  --white: #ffffff;
+}
+
+body {
+  text-align: center;
+  background-color: var(--Color1);
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.board {
+  background-color: var(--boardcolor);
+  border-top: 5px solid var(--white);
+  border-bottom: 5px solid var(--white);
+  border-left: 5px solid var(--boardcolor);
+  border-right: 5px solid var(--boardcolor);
+}
+
+
+.container {
+  position: relative;
+  right: 500px;
+}
+
+.startBtn {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+
+.controlsBtn {
+  width: 300px;
+  height: 150px;
+  top: 250px;
+  position: absolute;
+}
+
+.aboutMe {
+  width: 300px;
+  height: 150px;
+  top: 420px;
+  position: absolute;
+}
+
+.extraInfo {
+  width: 300px;
+  height: 150px;
+  top: 590px;
+  position: absolute;
+}
+
+.btnStyle {
+  background-color: var(--btnColor);
+  border: 2px solid black;
+  border-radius: 20px;
+  transition: 0.5s;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.btnStyle:hover {
+  background-color: var(--hoverColor);
+  cursor: pointer;
+  transform: translate(0px, 5px);
+}
+
+.btnStyle:active {
+  background-color: var(--boardcolor);
+  color: var(--white);
+}
+
+.homeBtn {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: 50px;
+}
+
+p {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.rules {
+  position: absolute;
+  top: 10px;
+  width: 300px;
+}
+
+.coverUp {
+  position: absolute;
+  top: 10px;
+  width: 300px;
+  height: 1000px;
+  z-index: 1;
+  background-color: var(--Color1);
+  transition: 2s;
+}
+
+.coverGone {
+  transform: translate(0px, 1000px);
+}
+
+@media screen and (max-width: 1710px) {
+  .homeBtn {
+    top: 700px;
+  }
+}
